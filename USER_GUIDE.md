@@ -119,15 +119,15 @@ Cursor-এর চ্যাট উইন্ডোতে (`Ctrl + L` বা `Cmd +
 
 ### মোবাইলে ডাউনলোড করার সবচেয়ে সহজ উপায় (১-ক্লিক ডাউনলোড):
 1. **সরাসরি ডাউনলোড লিঙ্ক**:  
-   আপনার ফোনের ব্রাউজার (Chrome/Samsung Internet) দিয়ে নিচের লিংকে ক্লিক করুন, সাথে সাথে ডাউনলোড শুরু হয়ে যাবে:  
-   👉 **[https://github.com/sultantipu199/agency-agents/raw/main/AgencyFlow.apk](https://github.com/sultantipu199/agency-agents/raw/main/AgencyFlow.apk)**
+   আপনার ফোনের ব্রাউজার (Chrome/Samsung Internet) দিয়ে নিচের লিংকে ক্লিক করুন, সাথে সাথে সরাসরি APK ফাইল ডাউনলোড শুরু হয়ে যাবে:  
+   👉 **[https://github.com/sultantipu199/agency-agents/releases/download/v1.0.1/AgencyFlow.apk](https://github.com/sultantipu199/agency-agents/releases/download/v1.0.1/AgencyFlow.apk)**
 
 2. **ক্যামেরা দিয়ে QR কোড স্ক্যান করে ডাউনলোড**:  
    আপনার ফোনের ক্যামেরা দিয়ে নিচের QR কোডটি স্ক্যান করলেই সরাসরি ডাউনলোড অপশন চলে আসবে:  
    ![AgencyFlow QR Code](apk-qr.png)
 
 3. **গিটহাব রিলিজ থেকে ডাউনলোড**:  
-   👉 **[GitHub Release v1.0.0](https://github.com/sultantipu199/agency-agents/releases/tag/v1.0.0)**
+   👉 **[GitHub Release v1.0.1](https://github.com/sultantipu199/agency-agents/releases/tag/v1.0.1)**
 
 ### মোবাইলে ইনস্টল ও রান করা:
 1. ডাউনলোড সম্পন্ন হলে নোটিফিকেশন বার থেকে অথবা ফোনের ফাইল ম্যানেজার (`Downloads` ফোল্ডার) থেকে `AgencyFlow.apk`-এ ট্যাপ করুন।

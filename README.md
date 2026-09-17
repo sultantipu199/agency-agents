@@ -10,8 +10,8 @@
 This repository contains the complete implementation and deployment of **The Agency** (`msitarzewski/agency-agents`) open-source collection of **279 specialized AI agents** across 18 divisions, paired with **AgencyFlow 2.0** — an autonomous dual-engine web application and growth marketing platform.
 
 ### 📱 Android APK (Direct Mobile Download)
-- **Direct Mobile Download Link**: [**Click to Download AgencyFlow.apk**](https://github.com/sultantipu199/agency-agents/raw/main/AgencyFlow.apk) (12 MB, signed, offline-ready).
-- **GitHub Release**: [Release v1.0.0](https://github.com/sultantipu199/agency-agents/releases/tag/v1.0.0)
+- **Direct Mobile Download Link**: [**Click to Download AgencyFlow.apk**](https://github.com/sultantipu199/agency-agents/releases/download/v1.0.1/AgencyFlow.apk) (12 MB, signed, offline-ready).
+- **GitHub Release Page**: [Release v1.0.1](https://github.com/sultantipu199/agency-agents/releases/tag/v1.0.1)
 - **Scan QR Code with Mobile Camera to Download**:
   
   ![AgencyFlow Mobile Download QR Code](apk-qr.png)
