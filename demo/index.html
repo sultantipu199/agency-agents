@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Agency · AI Specialists Hub & Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand-row">
+        <div class="brand-title">
+          <div class="brand-icon">🎭</div>
+          <div class="brand-text">
+            <h1>The Agency — AI Specialists Hub</h1>
+            <p>260+ Role-Based AI Agents for Claude Code, Antigravity, Cursor & More</p>
+          </div>
+        </div>
+        <div class="badge-official">
+          <span>●</span> 279 Agents Installed & Synced
+        </div>
+      </div>
+
+      <!-- Installation Status Cards -->
+      <div class="status-grid">
+        <div class="status-card">
+          <div class="status-icon" style="background: rgba(249, 115, 22, 0.15); color: #fb923c;">⚡</div>
+          <div class="status-info">
+            <h3>Claude Code <span class="status-tag tag-active">Active</span></h3>
+            <p>Native agent prompts installed</p>
+            <code>~/.claude/agents/</code>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-icon" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa;">🪐</div>
+          <div class="status-info">
+            <h3>Antigravity <span class="status-tag tag-active">Active</span></h3>
+            <p>Workspace & Global Skills</p>
+            <code>~/.gemini/config/skills/</code>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-icon" style="background: rgba(139, 92, 246, 0.15); color: #c084fc;">🖱️</div>
+          <div class="status-info">
+            <h3>Cursor <span class="status-tag tag-active">Active</span></h3>
+            <p>Project MDC Rules</p>
+            <code>.cursor/rules/</code>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">💻</div>
+          <div class="status-info">
+            <h3>Desktop App <span class="status-tag tag-active" style="background: rgba(59, 130, 246, 0.2); color:#93c5fd; border-color: rgba(59,130,246,0.4)">Available</span></h3>
+            <p>macOS, Linux & Windows GUI</p>
+            <code>agencyagents.app</code>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured App: AgencyFlow Dual-Agent Deployment -->
+      <div style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(16, 185, 129, 0.15)); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 18px 24px; margin-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="font-size: 32px; background: rgba(59, 130, 246, 0.2); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">🚀</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+              <strong style="font-size: 16px; color: #fff;">AgencyFlow — Live Full-Stack & Growth Marketing Platform</strong>
+              <span style="background: rgba(16,185,129,0.2); color: #34d399; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 9999px; border: 1px solid rgba(16,185,129,0.3);">DEPLOYED & ACTIVE</span>
+            </div>
+            <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">Collaboratively built and launched by the <strong>Full Stack Developer</strong> & <strong>Growth Marketing</strong> agents.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <a href="AgencyFlow.apk" download style="display: inline-flex; align-items: center; gap: 8px; background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); color: #34d399; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 14px; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+            <span>📱</span> Download Android APK
+          </a>
+          <a href="agencyflow/index.html" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #2563eb, #10b981); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+            <span>⚡</span> Open AgencyFlow App & Marketing Hub →
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs-container">
+      <button class="tab-btn active" id="tab-roster-btn" onclick="switchTab('roster')">
+        <span>👥</span> Agent Roster (<span id="total-count">...</span>)
+      </button>
+      <button class="tab-btn" id="tab-playground-btn" onclick="switchTab('playground')">
+        <span>⚡</span> Live Agent Simulator & Testing
+      </button>
+      <button class="tab-btn" id="tab-guide-btn" onclick="switchTab('guide')">
+        <span>📖</span> Setup Guide & Cheatsheet
+      </button>
+    </div>
+
+    <!-- TAB 1: ROSTER EXPLORER -->
+    <section id="section-roster">
+      <div class="controls-bar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Search agents by role, domain, skills (e.g. React, Security, Python, SEO, Architecture)..." oninput="filterAgents()">
+        </div>
+        <div class="divisions-pills" id="divisions-pills">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="agents-grid" id="agents-grid">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- TAB 2: PLAYGROUND & TEST SUITE -->
+    <section id="section-playground" class="playground-section">
+      <div class="panel-card">
+        <div class="panel-title">
+          <span>🎮</span> Agent Task Launcher
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Select Specialist Agent</label>
+          <select id="sim-agent-select" class="form-select" onchange="loadAgentPreset()">
+            <!-- Populated dynamically -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Workflow Task / Prompt</label>
+          <textarea id="sim-prompt-input" class="form-textarea" placeholder="Enter task instruction or select a preset..."></textarea>
+        </div>
+
+        <button class="run-btn" id="run-sim-btn" onclick="runSimulation()">
+          <span>🚀</span> Execute Specialist Agent Workflow
+        </button>
+
+        <div style="margin-top: 18px; font-size: 13px; color: var(--text-muted);">
+          💡 <strong>Tip:</strong> You can also copy the activation prompt and paste directly into Claude Code, Antigravity IDE, or Cursor.
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-title">
+          <span>📋</span> Agent Execution Output & Deliverables
+        </div>
+        <div id="sim-output" class="output-console">Select an agent and task, then click "Execute Specialist Agent Workflow" to run a live test.</div>
+      </div>
+    </section>
+
+    <!-- TAB 3: SETUP GUIDE & CHEATSHEET -->
+    <section id="section-guide" style="display:none;">
+      <div class="panel-card" style="margin-bottom: 20px;">
+        <div class="panel-title"><span>🚀</span> Quick Start & Activation Reference</div>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">
+          The Agency gives you specialized personas instead of generic chatbot answers. Here is how to use them across your tools:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+          <div style="background: var(--bg-secondary); padding: 18px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: #60a5fa; margin-bottom: 8px;">1. Claude Code Activation</h4>
+            <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 10px;">Installed to <code>~/.claude/agents/</code></p>
+            <div style="background: #000; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 12px; color: #a5f3fc;">
+              "Hey Claude, activate Frontend Developer mode and help me build a React component."
+            </div>
+          </div>
+
+          <div style="background: var(--bg-secondary); padding: 18px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: #c084fc; margin-bottom: 8px;">2. Antigravity IDE Activation</h4>
+            <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 10px;">Installed to <code>~/.gemini/config/skills/</code> and <code>.agents/skills/</code></p>
+            <div style="background: #000; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 12px; color: #fbcfe8;">
+              "Use the Security Engineer skill to review authentication implementation."
+            </div>
+          </div>
+
+          <div style="background: var(--bg-secondary); padding: 18px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: #34d399; margin-bottom: 8px;">3. Cursor IDE Activation</h4>
+            <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 10px;">Installed to <code>.cursor/rules/</code></p>
+            <div style="background: #000; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 12px; color: #bbf7d0;">
+              Rules are automatically active or tag <code>@engineering-backend-architect.mdc</code>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; padding: 16px; background: rgba(59, 130, 246, 0.08); border-radius: 8px; border: 1px solid rgba(59, 130, 246, 0.2);">
+          <h4 style="color: #93c5fd; margin-bottom: 6px;">Selective Installation Commands</h4>
+          <code style="font-size: 12px; display: block; margin: 4px 0; color: #e2e8f0;">./scripts/install.sh --tool claude-code --division engineering,security</code>
+          <code style="font-size: 12px; display: block; margin: 4px 0; color: #e2e8f0;">./scripts/install.sh --tool claude-code --agent frontend-developer,ui-designer</code>
+          <code style="font-size: 12px; display: block; margin: 4px 0; color: #e2e8f0;">./scripts/convert.sh  # Regenerates tool formats if agents are updated</code>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span>✓</span> <span id="toast-msg">Copied prompt to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

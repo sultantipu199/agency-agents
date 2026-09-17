@@ -1,0 +1,19 @@
+# Dependencies and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Temp & System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch and build directories
+scratch/
+.gemini/
+.idea/
+.vscode/
+
+# Ignore large APK binary in repo root to keep repo lightweight on GitHub (optional)
+# AgencyFlow.apk
